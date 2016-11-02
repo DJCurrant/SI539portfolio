@@ -1,5 +1,5 @@
 # SI539portfolio
-# namessssmsdfsmd
+
 # rubics
 # 1. has header(8), nav(6), footer(8) and well-styled
 # 2. shows current page(6)
