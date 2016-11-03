@@ -8,17 +8,64 @@
   <meta charset = "UTF-8">
   <style>
   html {
-  background: url(images/img1.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(images/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  /*html{
-    background-image: url(images/img1.png);
-    background-repeat:no-repeat;
-    background-size:cover;
-  }*/
+
+  .container{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .personal, .projects, .skills {
+    display: block;
+    position: relative;
+    line-height:130%;
+    width: 40%;
+    height: 444px;
+    background-repeat: no-repeat;
+    color:rgba(255, 255, 255, 1);
+    /*text-shadow: 2px 3px #000000;*/
+    text-align: right;
+    background-color: rgba(169,169,169,0.5);
+    background-size: 100%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  .personal{
+    background: url(images/personal.jpg) no-repeat center center;
+    /*-webkit-filter: grayscale(90%);*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .skills{
+    background: url(images/skills.jpg) no-repeat center center;
+    /*-webkit-filter: grayscale(90%);*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .projects{
+    background: url(images/projects.jpg) no-repeat center center;
+    /*-webkit-filter: grayscale(90%);*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   </style>
 </head>
 
@@ -27,25 +74,35 @@
   <header>
     <h1>ISL.  DG</h1>
     <div id='nav'>
-      <ul><a href="pages/home.html">HOME</a></ul>
-      <ul><a href="pages/personal.html">PERSONAL</a></ul>
-      <ul><a href="pages/project.html">PROJECTS</a></ul>
-      <ul><a href="pages/skills.html">SKILLS</a></ul>
+      <a href="main.html" class='active-page'>HOME</a>
+      <a href="personal.html" >PERSONAL</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
     </div>
   </header>
 
-  <section class='personal'>
-  </section>
+  <div class='container'>
+    <div class='personal'>
+      cat-patting syndrome</br>gracefully alcholic</br>electronic music</br>curious wanderer</br>
+      <br>
+      <button class='button'>about me</button>
+    </div>
 
-  <section class='projects'>
-  </section>
+    <div class='projects'>
+      metamaterials</br>waveguide</br>antenna design</br>optical resonant cavity</br>volunteer</br>
+      <button class='button'>projects</button>
+    </div>
 
-  <section class='skills'>
-  </section>
+    <div class='skills'>
+      programming</br>FEA simulation</br>PCB design</br>weirdly good cooking</br></br>
+      <button class='button'>skills</button>
+    </div>
+  </div>
 
   <div class='footer'>
-    <ul><button class='button'>Follow me on:</button></ul>
-    <ul>
+    <!-- <button class='button'>Follow me on:</button> -->
+    J. Luo @ University of Michigan School of Information
+    <!-- <ul>
       <a href="[full link to your Twitter]">
       <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" width="35" height="35" />
     </a></ul>
@@ -60,7 +117,7 @@
     <ul>
       <a href="pinterestaddress">
       <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest1.png" width="35" height="35" />
-    </a></ul>
-  </div>
+    </a></ul> -->
+  </footer>
 
 </body>
