@@ -3,7 +3,7 @@
 # rubics
 # 1. has header(8), nav(6), footer(8) and well-styled
 # 2. shows current page(6)
-# 3. validation(15): use validate-website to make sure there is no error?
+# 3. validation(15): use validate-website to make sure there is no error
 # 4. background-image(5): fills up space nicely
 # 5. photo-gallery(15)
 # 6. responsive design(20): 3 views (for diffenrent devices?? what's the difference from "media query"?)
