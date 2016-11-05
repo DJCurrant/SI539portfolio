@@ -4,6 +4,7 @@
 <head>
   <title>ISL. DG</title>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset = "UTF-8">
   <style>
@@ -15,16 +16,21 @@
     background-size: cover;
   }
 
+
   .container{
-    border-radius: 4px 4px 4px 4px;
     margin: 0 auto;
     margin-top: 4%;
     margin-bottom: 4%;
     width: 70%;
-    background-color: rgba(255, 255, 255, 0.2);
-    /*padding-left: 3%;
-    padding-right: 3%;*/
+    background-color: rgba(255, 255, 255, 0.1);
+    /*padding-top: 0%;
+    padding-bottom: 0%;*/
+    border-radius: 4px 4px 4px 4px;
   }
+  /*img{
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+  }*/
 
   .personal{
     background-color: rgba(0, 0, 0, 0.5);
@@ -54,8 +60,10 @@
   #personal_text, #projects_text, #skills_text {
     display: inline-block;
     position: absolute;
+    font-family: "Courier New", Courier, monospace;
+    /*font-family: "Lucida Console", Monaco, monospace;*/
     text-align: center;
-    line-height:150%;
+    line-height:130%;
     width: 40%;
     height: 444px;
     color:rgba(255, 255, 255, 1);
@@ -65,6 +73,10 @@
     margin-right: 1%;
     font-size: 1.3rem;
   }
+  .nav-up{
+    top: -100px;
+  }
+
 
   #personal_img{
     background: url(images/personal.jpg) no-repeat center center;
@@ -96,11 +108,12 @@
     background-size: cover;
   }
   </style>
+
 </head>
 
 <body>
 
-  <header>
+  <header class='nav-down'>
     <h1>ISL.  DG</h1>
     <div id='nav'>
       <a href="main.html" class='active-page'>HOME</a>
@@ -119,16 +132,15 @@
     <div class='personal'>
       <div  id='personal_img'>
       </div>
-
       <div id='personal_text'>
         <p style="text-align: center"></br></br>
           Possibly have some sort of cat-patting syndrome
           </br>because I just can't stop patting cats
           </br>Love cooking and drinking. Beer is my favourite
           </br>Photography is my thing
-          </br>And I have more to show you about it.
+          </br>And I have more to show you about it
           </br>
-          <button class='button'>about me</button>
+          <a href='personal.html' class='button'>about me</a>
         </p>
       </div>
     </div>
@@ -142,7 +154,7 @@
           and meta-materials </br>
           These are kind of cool stuffs </br>
           Check it out for more</br>
-          <button class='button'>projects</button>
+          <a href="projects.html" class='button'>projects</a>
         </p>
       </div>
 
@@ -156,8 +168,9 @@
 
       <div id='skills_text'>
         <p></br></br>
-          programming</br>FEA simulation</br>PCB design</br>weirdly good cooking</br></br>
-          <button class='button'>skills</button>
+          Familiar with several programming languages</br>
+          Familiar with FEA simulation</br>PCB design</br>Weirdly good at cooking</br></br>
+          <a href="skills.html" class='button'>skills</a>
         </p>
       </div>
     </div>
@@ -165,8 +178,8 @@
   </div>
 
   <div class='footer'>
+    <span>J. Luo @ University of Michigan School of Information</span>
     <!-- <button class='button'>Follow me on:</button> -->
-    J. Luo @ University of Michigan School of Information
     <!-- <ul>
       <a href="[full link to your Twitter]">
       <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" width="35" height="35" />
@@ -184,6 +197,4 @@
       <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest1.png" width="35" height="35" />
     </a></ul> -->
   </div>
-
 </body>
-</html>
