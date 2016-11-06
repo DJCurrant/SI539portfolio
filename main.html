@@ -4,111 +4,10 @@
 <head>
   <title>ISL. DG</title>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/home.css"/>
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset = "UTF-8">
-  <style>
-  html {
-    background: url(images/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-
-  .container{
-    margin: 0 auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    width: 70%;
-    background-color: rgba(255, 255, 255, 0.1);
-    /*padding-top: 0%;
-    padding-bottom: 0%;*/
-    border-radius: 4px 4px 4px 4px;
-  }
-  /*img{
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-  }*/
-
-  .personal{
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .projects{
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .skills{
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  #personal_img, #projects_img, #skills_img {
-    border-radius: 4px 4px 4px 4px;
-    display: inline-block;
-    position: relative;
-    line-height:130%;
-    width: 40%;
-    height: 444px;
-    background-repeat: no-repeat;
-    color:rgba(255, 255, 255, 1);
-    /*text-shadow: 2px 3px #000000;*/
-    /*text-align: center;*/
-    /*background-size: 100%;*/
-    /*margin-left: 10px;*/
-    font-size: 1.5rem;
-  }
-  #personal_text, #projects_text, #skills_text {
-    display: inline-block;
-    position: absolute;
-    font-family: "Courier New", Courier, monospace;
-    /*font-family: "Lucida Console", Monaco, monospace;*/
-    text-align: center;
-    line-height:130%;
-    width: 40%;
-    height: 444px;
-    color:rgba(255, 255, 255, 1);
-    /*background-color: rgba(169,169,169,0.5);*/
-    /*margin-top: 5%;*/
-    margin-left: 1%;
-    margin-right: 1%;
-    font-size: 1.3rem;
-  }
-  .nav-up{
-    top: -100px;
-  }
-
-
-  #personal_img{
-    background: url(images/personal.jpg) no-repeat center center;
-    -webkit-filter: grayscale(95%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  #skills_img{
-    background: url(images/skills.jpg) no-repeat center center;
-    -webkit-filter: grayscale(95%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  #projects_text{
-    position: relative;
-  }
-  #projects_img{
-    margin-left: 8px;
-    position: absolute;
-    background: url(images/projects.jpg) no-repeat center center;
-    -webkit-filter: grayscale(95%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  </style>
-
 </head>
 
 <body>
@@ -132,7 +31,7 @@
     <div class='personal'>
       <div  id='personal_img'>
       </div>
-      <div id='personal_text'>
+      <div id='personal_text' class='largeview'>
         <p style="text-align: center"></br></br>
           Possibly have some sort of cat-patting syndrome
           </br>because I just can't stop patting cats
@@ -143,10 +42,20 @@
           <a href='personal.html' class='button'>about me</a>
         </p>
       </div>
+      <div id='personal_text' class='smallview'>
+        <p style="text-align: center">
+          Possibly have some sort of cat-patting syndrome because I just can't stop patting cats.
+          Love cooking and drinking. Beer is my favourite.
+          Photography is my thing.
+          And I have more to show you about it.
+          </br>
+          <a href='personal.html' class='button'>about me</a>
+        </p>
+      </div>
     </div>
 
     <div class='projects'>
-      <div id='projects_text'>
+      <div id='projects_text' class='largeview'>
         <p style="text-align: center">
           </br></br>
           Designed antenna for RFID devices </br>
@@ -160,16 +69,33 @@
 
       <div id='projects_img'>
       </div>
+      <div id='projects_text' class='smallview'>
+        <p style="text-align: center">
+          Designed antenna for RFID devices.
+          Done some researches about optical resonant cavity.
+          and meta-materials.
+          These are kind of cool stuffs.
+          Check it out for more.</br>
+          <a href="projects.html" class='button'>projects</a>
+        </p>
+      </div>
     </div>
 
     <div class='skills'>
       <div id='skills_img'>
       </div>
 
-      <div id='skills_text'>
+      <div id='skills_text' class='largeview'>
         <p></br></br>
           Familiar with several programming languages</br>
           Familiar with FEA simulation</br>PCB design</br>Weirdly good at cooking</br></br>
+          <a href="skills.html" class='button'>skills</a>
+        </p>
+      </div>
+      <div id='skills_text' class='smallview'>
+        <p>
+          Familiar with several programming languages.
+          Familiar with FEA simulation and PCB design. Weirdly good at cooking.</br>
           <a href="skills.html" class='button'>skills</a>
         </p>
       </div>
