@@ -3,55 +3,89 @@
 
 <head>
   <title>ISL. DG</title>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/projects.css"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset = "UTF-8">
-  <style>
-  html {
-    background: url(images/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  </style>
-
 </head>
 
 <body>
 
-  <header>
-    <h1>ISL. DG</h1>
-    <div id='nav'>
-      <a href="main.html">HOME</a>
-      <a href="personal.html">PERSONAL</a>
-      <a href="projects.html" class='active-page'>PROJECTS</a>
-      <a href="skills.html">SKILLS</a>
-    </div>
+  <header id='header'>
+      <h1>ISL. DG</h1>
+      <div id='nav'>
+        <a href="main.html">HOME</a>
+        <a href="personal.html">PERSONAL</a>
+        <a href="projects.html" class='active-page'>PROJECTS</a>
+        <a href="skills.html">SKILLS</a>
+      </div>
   </header>
 
-  <section>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Research Projects</h2>
+        <h3>HERE ARE JUST A FEW EXAMPLES</h3>
+        <a class="btn btn-primary" href="#metamaterial">See All</a>
+      </div>
+    </div>
   </section>
 
-  <div class='footer'>
-    J. Luo @ University of Michigan School of Information
-    <!-- <ul><button class='button'>Follow me on:</button></ul>
-    <ul>
-      <a href="[full link to your Twitter]">
-      <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" width="35" height="35" />
-    </a></ul>
-    <ul>
-      <a href="[full link to your LinkedIn]">
-        <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png" width="35" height="35" />
-    </a></ul>
-    <ul>
-      <a href="[full link to your Facebook page]">
-      <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png" width="35" height="35" />
-    </a></ul>
-    <ul>
-      <a href="pinterestaddress">
-      <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest1.png" width="35" height="35" />
-    </a></ul> -->
-  </div>
+  <section class='container'>
+    <div class='col-md-6 col-sm-12' id='metamaterial'>
+      <div class="col-sm-12">
+        <h3 class='phototitle'> Metamaterials</h3>
+        <hr/>
+      </div>
+      <div class='row'>
+        <div class='col-md-6 col-sm-8'>
+          <img alt='photo' src='images/meta.jpg'>
+        </div>
+        <div class='col-md-6 col-sm-12'>
+          <h3>Description</h3></br>
+          <h4>This NNSFC-funded project is based on M. Lapine's work (see left) on elastic metamaterials.
+            Instead of thin protein fibrics, we used ferrofluid as the substance between
+           periodic element layers.
+           With the elastic property and non-linearity of ferrofluid, our goal is to tunable
+           and non-linear metamaterials.
+         </h4>
+        </div>
+      </div>
+    </div>
+    <div class='col-md-6 col-sm-12' id='antenna'>
+      <div class="col-sm-12">
+        <h3 class='phototitle'> Antenna</h3>
+        <hr/>
+      </div>
+      <div class='row'>
+        <div class='col-md-6 col-sm-8'>
+          <img alt='photo' src='images/antenna.png'>
+        </div>
+        <div class='col-md-6 col-sm-12'>
+          <h3>Description</h3></br>
+          <h4>A Sum and Difference Network working at the centre frequency of 35.5GHz of Ka-Band.
+            The Monopulse radar needs to be fed with the Sum and Difference Network for its
+            requirement for sum and difference signals. Due to the requirement for sum and difference
+            signals, the Monopulse radar was added to be fed with the Sum and Difference Network.
+            In this paper, the proposed structure adopts a kind of planar Magic-T with its
+            E-arm bent to the parallel side and the E-arm is fed through a longitudinal coupling gap.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='container' id='backtotop'>
+    <div class="col-sm-12">
+      <a href="#header" class='phototitle'>Back To Top</a>
+      <hr/>
+    </div>
+  </section>
+
+  <section class='footer'>
+    <span>J. Luo @ University of Michigan School of Information</span>
+  </section>
 
 </body>
