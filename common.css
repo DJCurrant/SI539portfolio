@@ -1,61 +1,64 @@
 /* this is the common style sheet shared by all four pages */
 body{
-  font-family: Helvetica, serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin:auto;
+  font-weight: 300;
   font-size: 12px;
 }
 h1{
   font-size: 3rem;
-  color: white;
+  color: rgba(20,20,20,0.8);
   margin-left: 15%;
   margin-bottom: 10px;
 }
-div {
+#nav, .footer {
   width: 70%;
-  height: auto;
-  text-align: left;
+  text-align: right;
   margin: 0 auto;
   /*border-width: 10px;*/
   background-color: #efefef;
   /*opacity: 0.6;*/
 }
 #nav{
+  padding-top: 0.3%;
+  border-radius: 2px 2px 2px 2px;
   opacity: 0.6;
 }
-#nav ul{
-  display: inline-block;
-  /*list-style-type: none;*/
-  /*margin: 0 auto;*/
-  /*text-align: center;*/
-}
 #nav a{
-  font-size: 0.9rem;
+  display: inline-block;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   color: rgb(20,20,20);
   /*text-align: center;*/
-  margin: 0 1.3rem;
+  margin: 0 2rem;
+}
+#nav .active-page{
+  font-weight: bolder;
+  color: rgba(200,200,200,1);
 }
 .footer{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 0.3rem;
-    background-color: #efefef;
-    /*text-align: center;*/
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*padding: 0.3rem;*/
+  /*background-color: #efefef;*/
+  text-align: center;
+  background-color: rgba(239,239,239,0.6);
 }
-.footer ul{
+/*.footer ul{
   display: inline-block;
-}
+}*/
 
 .button {
     background-color: #555555;
     border: none;
     color: white;
-    /*padding: 15px 32px;*/
+    padding: 0px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1.3rem;
+    font-weight: bolder;
+    /*display: inline-block;*/
+    font-size: 1rem;
 }
