@@ -7,6 +7,16 @@
 .jumbotron h3 {
   color: #fff;
 }
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('personal_bkg.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 550px;
+  margin: 20px auto;
+}
+
 .btn.btn-primary {
   margin-top: 20px;
   border-radius: 2px;
@@ -19,10 +29,14 @@
   color: #ffffff;
   background-color: rgba(20,20,20, 0.7);
 }
-#phototitle{
+.phototitle, .arrow{
+  margin-top: 30px;
   font-size: 20px;
   font-weight: 600;
   color: rgba(0,0,0,0.5);
+}
+.arrow{
+  text-align: right;
 }
 hr{
   width: 100%;
@@ -34,10 +48,15 @@ section .row img {
   filter: grayscale(100%);
   margin: 10px 30px;
   margin-left: 0;
+  border-radius: 3px;
   width: 100%;
 }
 section .row img:hover{
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   margin-left: 2px;
+}
+section .row .col-xs-10{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
