@@ -14,7 +14,6 @@
   }
   #personal_img, #projects_img, #skills_img {
     text-align: center;
-    /*border-radius: 4px 4px 4px 4px;*/
     display: block;
     position: relative;
     line-height:130%;
@@ -25,10 +24,10 @@
     font-size: 1.5rem;
     margin-bottom: 2px;
   }
-  #personal_text.largeview, #projects_text.largeview,#skills_text.largeview{
+  #personal_text_largeview, #projects_text_largeview,#skills_text_largeview{
     display: none;
   }
-  #personal_text.smallview, #projects_text.smallview, #skills_text.smallview{
+  #personal_text_smallview, #projects_text_smallview, #skills_text_smallview{
     display: none;
   }
   #personal_img{
@@ -64,7 +63,7 @@
   .skills{
     background-color: rgba(0, 0, 0, 0.5);
   }
-  #mobileview{
+  .mobileview{
     text-align: center;
     width: 40px;
     height: auto;
@@ -77,17 +76,14 @@
     padding: 5px 7px 7px 7px;
     margin-top: 40px;
   }
-  #mobileview:hover{
-    /*color: rgb(50, 150, 215);*/
+  .mobileview:hover{
     color: pink;
   }
   #nav, .footer {
     width: 100%;
     text-align: right;
     margin: 0 auto;
-    /*border-width: 10px;*/
     background-color: #efefef;
-    /*opacity: 0.6;*/
   }
   #nav{
     display: none;
@@ -103,8 +99,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    /*padding: 0.3rem;*/
-    /*background-color: #efefef;*/
     text-align: center;
     background-color: rgba(239,239,239,0.6);
   }
@@ -122,8 +116,6 @@
     margin: 0 auto;
     width: 100%;
     background-color: rgba(50, 115, 125, 1);
-    /*padding-top: 0%;
-    padding-bottom: 0%;*/
     border-radius: 4px 4px 4px 4px;
   }
   #personal_img, #projects_img, #skills_img {
@@ -137,23 +129,21 @@
     color:rgba(255, 255, 255, 1);
     font-size: 1.5rem;
   }
-  #personal_text, #projects_text, #skills_text {
+  #personal_text_smallview, #projects_text_smallview, #skills_text_smallview {
     display: inline-block;
     position: relative;
     font-family: "Courier New", Courier, monospace;
-    /*font-family: "Lucida Console", Monaco, monospace;*/
     text-align: center;
     line-height:100%;
     width: 80%;
     margin-left: 10%;
     color:rgba(20, 20, 20, 0.6);
-    /*margin-top: 5%;*/
     font-size: 1.3rem;
   }
-  #personal_text.largeview, #projects_text.largeview,#skills_text.largeview{
+  #personal_text_largeview, #projects_text_largeview,#skills_text_largeview{
     display: none;
   }
-  #personal_text.smallview, #projects_text.smallview, #skills_text.smallview{
+  #personal_text_smallview, #projects_text_smallview, #skills_text_smallview{
     display: inline-block;
   }
   #personal_img{
@@ -189,16 +179,14 @@
   .skills{
     background-color: white;
   }
-  #mobileview{
+  .mobileview{
     display: none;
   }
   #nav, .footer {
     width: 100%;
     text-align: right;
     margin: 0 auto;
-    /*border-width: 10px;*/
     background-color: #efefef;
-    /*opacity: 0.6;*/
   }
   #nav{
     display: block;
@@ -214,14 +202,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    /*padding: 0.3rem;*/
-    /*background-color: #efefef;*/
     text-align: center;
     background-color: rgba(239,239,239,0.6);
   }
 }
 @media screen and (min-width: 1000px){
-  /* this is the common style sheet shared by all four pages */
   body{
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin:auto;
@@ -240,9 +225,7 @@
     width: 70%;
     text-align: right;
     margin: 0 auto;
-    /*border-width: 10px;*/
     background-color: #efefef;
-    /*opacity: 0.6;*/
   }
   #nav{
     padding-top: 0.3%;
@@ -255,7 +238,6 @@
     text-decoration: none;
     font-weight: bold;
     color: rgb(20,20,20);
-    /*text-align: center;*/
     margin: 0 2rem;
   }
   #nav .active-page{
@@ -267,14 +249,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    /*padding: 0.3rem;*/
-    /*background-color: #efefef;*/
     text-align: center;
     background-color: rgba(239,239,239,0.6);
   }
-  /*.footer ul{
-    display: inline-block;
-  }*/
 
   .button {
       background-color: #555555;
@@ -284,7 +261,6 @@
       text-align: center;
       text-decoration: none;
       font-weight: bolder;
-      /*display: inline-block;*/
       font-size: 1rem;
   }
 
@@ -301,15 +277,8 @@
     margin-bottom: 4%;
     width: 70%;
     background-color: rgba(255, 255, 255, 0.1);
-    /*padding-top: 0%;
-    padding-bottom: 0%;*/
     border-radius: 4px 4px 4px 4px;
   }
-  /*img{
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-  }*/
-
   .personal{
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -329,32 +298,24 @@
     height: 444px;
     background-repeat: no-repeat;
     color:rgba(255, 255, 255, 1);
-    /*text-shadow: 2px 3px #000000;*/
-    /*text-align: center;*/
-    /*background-size: 100%;*/
-    /*margin-left: 10px;*/
     font-size: 1.5rem;
   }
-  #personal_text, #projects_text, #skills_text {
+  #personal_text_largeview, #projects_text_largeview, #skills_text_largeview {
     display: inline-block;
     position: absolute;
-    /*font-family: "Courier New", Courier, monospace;*/
-    /*font-family: "Lucida Console", Monaco, monospace;*/
     text-align: center;
     line-height:130%;
     width: 40%;
     height: 444px;
     color:rgba(255, 255, 255, 1);
-    /*background-color: rgba(169,169,169,0.5);*/
-    /*margin-top: 5%;*/
     margin-left: 1%;
     margin-right: 1%;
     font-size: 1.3rem;
   }
-  #personal_text.largeview, #projects_text.largeview,#skills_text.largeview{
+  #personal_text_largeview, #projects_text_largeview,#skills_text_largeview{
     display: inline-block;;
   }
-  #personal_text.smallview, #projects_text.smallview, #skills_text.smallview{
+  #personal_text_smallview, #projects_text_smallview, #skills_text_smallview{
     display: none;
   }
   #personal_img{
@@ -373,7 +334,7 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  #projects_text{
+  #projects_text_largeview{
     position: relative;
   }
   #projects_img{
@@ -403,17 +364,13 @@
     width: 70%;
     text-align: right;
     margin: 0 auto;
-    /*border-width: 10px;*/
     background-color: #efefef;
-    /*opacity: 0.6;*/
   }
   .footer{
     position: relative;
     right: 0;
     bottom: 0;
     left: 0;
-    /*padding: 0.3rem;*/
-    /*background-color: #efefef;*/
     text-align: center;
     background-color: rgba(239,239,239,0.6);
   }
