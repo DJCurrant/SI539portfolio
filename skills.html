@@ -3,55 +3,146 @@
 
 <head>
   <title>ISL. DG</title>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/skills.css"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset = "UTF-8">
-  <style>
-  html {
-    background: url(images/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  </style>
-
 </head>
 
 <body>
 
-  <header>
-    <h1>ISL. DG</h1>
-    <div id='nav'>
-      <a href="main.html">HOME</a>
-      <a href="personal.html">PERSONAL</a>
-      <a href="projects.html">PROJECTS</a>
-      <a href="skills.html" class='active-page'>SKILLS</a>
-    </div>
+  <header id='header'>
+      <h1>ISL. DG</h1>
+      <div id='nav'>
+        <a href="main.html">HOME</a>
+        <a href="personal.html">PERSONAL</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="skills.html"  class='active-page'>SKILLS</a>
+      </div>
   </header>
 
-  <section>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>Skills</h2>
+        <h3>WIDE RANGE OF INTERESTS</h3>
+        <a class="btn btn-primary" href="#programming">See All</a>
+      </div>
+    </div>
   </section>
 
-  <div class='footer'>
-    J. Luo @ University of Michigan School of Information
-    <!-- <ul><button class='button'>Follow me on:</button></ul>
-    <ul>
-      <a href="[full link to your Twitter]">
-      <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" width="35" height="35" />
-    </a></ul>
-    <ul>
-      <a href="[full link to your LinkedIn]">
-        <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png" width="35" height="35" />
-    </a></ul>
-    <ul>
-      <a href="[full link to your Facebook page]">
-      <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png" width="35" height="35" />
-    </a></ul>
-    <ul>
-      <a href="pinterestaddress">
-      <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest1.png" width="35" height="35" />
-    </a></ul> -->
-  </div>
+  <section class='container'>
+    <div class='row'>
+      <div class='col-md-6' id='programming'>
+        <div class="col-sm-12">
+          <h3 class='phototitle'> Programming</h3>
+          <hr/>
+        </div>
+        <div class='col-lg-10'>
+            <div class="progress">
+              <div class="progress-bar progress-bar-Success" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                Java
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                C++
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                C
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                Python
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class='col-md-6' id='tools'>
+        <div class="col-lg-12">
+          <h3 class='phototitle'> Tools</h3>
+          <hr/>
+        </div>
+        <div class='col-lg-10'>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                Auto CAD
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                HFSS
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                COMSOL
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                Photoshop
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class='col-md-12' id='OtherSkills'>
+        <div class="col-sm-12">
+          <h3 class='phototitle'> Other Skills</h3>
+          <hr/>
+        </div>
+        <div class='col-lg-12'>
+          <div class='row'>
+            <div class='col-sm-3 col-xs-4' id='Cooking'>
+              <img alt='photo' src="images/cooking.jpg">
+              <h5>Cooking</h5>
+            </div>
+            <div class='col-sm-3 col-xs-4' id='Crafting'>
+              <img alt='photo' src="images/crafting.jpg">
+              <h5>Crafting</h5>
+            </div>
+            <div class='col-sm-3 col-xs-4' id='Babysitting'>
+              <img alt='photo' src="images/babysitting.jpg">
+              <h5>Babysitting (just kidding)</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='container' id='backtotop'>
+    <div class="col-sm-12">
+      <a href="#header" class='phototitle'>Back To Top</a>
+      <hr/>
+    </div>
+  </section>
+
+  <section class='footer'>
+    <span>J. Luo @ University of Michigan School of Information</span>
+  </section>
 
 </body>
