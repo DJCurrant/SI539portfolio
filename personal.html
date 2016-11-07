@@ -10,35 +10,6 @@
   <link rel="stylesheet" type="text/css" href="css/personal.css"/>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset = "UTF-8">
-  <style>
-
-  html {
-    /*background: url(images/background.jpg) no-repeat center center fixed;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  .photogallery {
-    display: inline-block;
-    margin: 0 auto;
-    background-color: rgba(255,255,255,1);
-    width: 70%;
-  }
-
-  .jumbotron {
-    display: flex;
-    align-items: center;
-    background-image: url('css/personal_bkg.jpg');
-    background-size: cover;
-    color: #ffffff;
-    height: 550px;
-    margin: 20px auto;
-    /*text-shadow: 0.25px 0.25px 0.25px #000000;*/
-  }
-
-  </style>
-
 </head>
 
 <body>
@@ -57,75 +28,97 @@
     <div class="container">
       <div class="row text-center">
         <h2>Photography Projects</h2>
-        <h3>Distortion MaGnifies RealitY</h3>
-        <a class="btn btn-primary" href="#foggy" text-align='left'>See All</a>
+        <h3>DISTORTION MAGNIFIES REALITY</h3>
+        <a class="btn btn-primary" href="#foggy">See All</a>
       </div>
     </div>
   </section>
 
   <section class="container" id='foggy'>
     <div class="col-sm-12">
-      <p id='phototitle'> Oct. Fog </p>
+      <p class='phototitle'> Oct. Fog <a class='arrow' href='#plants'>&#8650;</a></p>
       <hr/>
     </div>
     <div class='row'>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/fog1.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/fog1.jpg'>
       </div>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/fog2.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/fog2.jpg'>
       </div>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/fog4.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/fog3.jpg'>
       </div>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/fog5.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/fog4.jpg'>
+      </div>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/fog5.jpg'>
       </div>
     </div>
   </section>
+
   <section class="container" id='plants'>
     <div class="col-sm-12">
-      <p id='phototitle'> Plants </p>
+      <p class='phototitle'> Plants
+      <a class='arrow' href='#foggy'>&#8648;</a>
+      <a class='arrow' href='#others'>&#8650;</a></p>
       <hr/>
     </div>
     <div class='row'>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/plants1.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/plants1.jpg'>
       </div>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/plants2.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/plants2.jpg'>
       </div>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/plants3.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/plants3.jpg'>
       </div>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/plants4.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/plants4.jpg'>
       </div>
-      <div class='col-lg-4 col-sm-6 col-xs-12'>
-        <img src='images/plants5.jpg'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/plants5.jpg'>
+      </div>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/plants6.jpg'>
       </div>
     </div>
+  </section>
+
+  <section class="container" id='others'>
     <div class="col-sm-12">
-      <a href="#header" id='phototitle'>Back To Top</a>
+      <p class='phototitle'> Others
+      <a class='arrow' href='#plants'>&#8648;</a>
+      <a class='arrow' href='#backtotop'>&#8650;</a></p>
+      <hr/>
+    </div>
+    <div class='row'>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/others1.jpg'>
+      </div>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/others3.jpg'>
+      </div>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/others2.jpg'>
+      </div>
+      <div class='col-lg-3 col-sm-6 col-xs-10'>
+        <img alt='photo'  src='images/others4.jpg'>
+      </div>
+    </div>
+  </section>
+
+  <section class='container' id='backtotop'>
+    <div class="col-sm-12">
+      <a href="#header" class='phototitle'>Back To Top</a>
       <hr/>
     </div>
   </section>
 
-  <div class='footer'>
+  <section class='footer'>
     <span>J. Luo @ University of Michigan School of Information</span>
-    <!-- <button class='button'>Follow me on:</button>
-      <a href="[full link to your Twitter]">
-      <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" width="20" height="20" />
-    </a>
-      <a href="[full link to your LinkedIn]">
-        <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png" width="20" height="20" />
-    </a>
-      <a href="[full link to your Facebook page]">
-      <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png" width="20" height="20" />
-    </a>
-      <a href="pinterestaddress">
-      <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest1.png" width="20" height="20" />
-    </a> -->
-  </div>
+  </section>
 
 </body>
